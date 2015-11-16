@@ -1,5 +1,3 @@
-# jessica-cps.github.io
-
-<h1>Justo ou Barato</h1>
+# Justo ou Barato :: justooubarato.com.br
 
 Site criado para um projeto de TCC
