@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justo ou Barato</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="first-line-section">
+        <div class="row">
+          <div class="large-12 columns text-right">
+            <div class="large-7 columns">
+              <div id="search">  
+                <div class="cell"><input type="search" placeholder="O que você procura?"></div>
+                <div class="cell"><div class="button"></div></div>
+              </div>
+            </div>
+            <a href="#"><img src="img/icon-mail.svg"/>Contato</a>
+
+            <div id="fade" class="LB-black-overlay" onclick="if (!is_modal) HideLightBox(); return false;"></div>
+            <div id="single12" class="LB-white-content">
+              <div class="close" onclick="HideLightBox(); return false;">X</div>
+
+              <div class="modalbox initialmodal animate">
+                <div class="content-lightbox content-login">
+                  <div class="content-lb-left left">
+                    <h4>Já sou cadastrado</h4>
+                    <div class="login">
+                      <form method="post" action="sacola.html">
+                          <p><input type="text" name="login" value="" placeholder="E-mail"></p>
+                          <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                          <p><a class="remember-pass" href="#">Esqueceu a senha?</a></p>
+                          <button class="submit"><input type="submit" name="commit" value="Entrar"></button>
+                          <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="content-lb-left left">
+                    <h4>Não sou cadastrado</h4>
+                    <p>
+                      Faça seu cadastro e conclua suas compras. 
+                    </p> 
+                    <img src="img/site-blindado.png"/>
+                    <div class="login">
+                        <button type="button" class="redo btn">Cadastrar-se</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+             
+              <div class="modalbox cadastromodal animate">
+                <div class="content-lightbox content-cadastro">
+                  <button type="button" class="redo btn">< Voltar</button>
+                  <h4>Dados pessoais</h4>
+                  <div class="cadastro">
+                    <form method="post" action="sacola.html">
+                        <p><input type="text" name="nome" value="" placeholder="Nome">
+                        <input type="text" name="sobrenome" value="" placeholder="Sobrenome"></p>
+                        <p><input type="email" name="email" value="" placeholder="E-mail"></p>
+                        <p><input type="text" name="cpf" value="" placeholder="CPF"></p>
+                        <p>
+                        <input type="text" name="nascimento" value="" placeholder="Data de Nascimento">
+                        <label for="sexo">Sexo: </label>
+                        <input type="radio" name="sexo" value="Feminino"><label for="sexo">Feminino</label>
+                        <input type="radio" name="sexo" value="Masculino"><label for="sexo">Masculino</label>
+                        </p>
+                        <h4>Dados da conta</h4>
+                        <p><input type="password" name="password" value="" placeholder="Senha">
+                        <input type="password" name="password" value="" placeholder="Confirme sua senha">
+                        <button class="submit"><input type="submit" name="commit" value="Cadastrar" onclick="HideLightBox(); return false;"></button></p>
+                        <p><button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+
+            <a id="OpenLightBox">
+              <span id="lightboxspan" onclick="ShowLightBox('single12'); return false;">
+                <img class="icon-perfil" src="img/icon-perfil.svg"/>Login
+              </span>
+            </a>
+            <a href="sacola.html"><img src="img/icon-bag.svg"/>Sacola</a>
+          </div>
+        </div>
+      </section>
+      <section class="second-line-section">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1><a href="loja.html"><img src="img/logo-job.png"/></a></h1>
+            <nav>
+              <ul>
+                  <li>
+                    <a href="tendencias.html">Tendências</a>
+                  </li>
+                  <li>
+                    <a href="novidades.html">Novidades</a>
+                  </li>
+                  <li>
+                    <a href="marcas.html">Comprar por Marca</a>
+                  </li>
+                  <li>
+                    <a href="produtos.html">Comprar por Produto</a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+    <section>
+      <div class="panel">
+        <div class="internal-product bag">
+          <div class="row">
+            <div class="large-12 columns">
+              <h3>Meus pedidos</h3>
+              <h4>Produtos</h4>
+              <div class="large-2 medium-2 left">
+                <img src="img/product_0012-tatoo.jpg" />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <span>
+                    <strong>Camiseta Tattoo Sport</strong>
+                    <span>Tamanho P</span>
+                </span>
+              </div>
+              <div class="right">
+                <div class="labels-internal">
+                  <span class="label-internal-product">Quantidade</span>
+                  <span>1</span>
+                </div>
+                <div class="labels-internal">
+                  <span class="label-internal-product">Valor unitário</span>
+                  <span>R$130,00</span>
+                </div>
+                <div class="labels-internal">
+                  <span class="label-internal-product">Valor total</span>
+                  <span>R$130,00</span>
+                </div>
+              </div>
+            </div>
+                
+
+            <div class="large-12 columns">
+              <div class="right">
+                <span>Total: </span>
+                <span>R$130,00</span>
+                <span> + </span>
+                <input type="radio">
+                Doação: R$ <input class="price-donation" type="number" min="0.10" step="0.10" value="1.00" />
+              </div>
+            </div>
+
+            <div class="large-12 columns l-row-mini">
+              <div class="left">
+                <h4>Forma de envio</h4>
+                <span>Escolha a forma de envio: </span>
+                <div class="types-send">
+                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
+                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
+                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
+                </div>
+              </div>
+              <div class="large-3 right">
+                <label for="cep">Digite o CEP:</label>
+                <input type="text" name="cep" class="label-cep">
+                
+                <div class="text-right l-row-mini">
+                  <p><span class="left">Frete:</span> <span>R$3,00</span></p>
+                  <p><span class="left">Prazo de entrega:</span> <span>3 dias úteis</span></p>
+                  <p><span class="left">Total do pedido:</span> <span>R$133,00</span></p>
+                </div>
+                <a href="finalizar-pedido.html" class="buy-button right"><button>Finalizar pedido</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h3>Veja também</h3>
+          <div class="multiple-items news-slider">
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="multiple-items brands-list">
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav>
+            <ul class="large-2">
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+              <li><a href="loja.html">Nossa loja</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="social-media large-3 right">
+              <h4>Nos acompanhe</h4>
+              <li><a href="#"><img src="img/icon-facebook.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-instagram.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-twitter.svg"/></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 3
+        });
+      });
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>

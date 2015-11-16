@@ -1,0 +1,509 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justo ou Barato</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="first-line-section">
+        <div class="row">
+          <div class="large-12 columns text-right">
+            <div class="large-7 columns">
+              <div id="search">  
+                <div class="cell"><input type="search" placeholder="O que você procura?"></div>
+                <div class="cell"><div class="button"></div></div>
+              </div>
+            </div>
+            <a href="#"><img src="img/icon-mail.svg"/>Contato</a>
+            <div id="fade" class="LB-black-overlay" onclick="if (!is_modal) HideLightBox(); return false;"></div>
+            <div id="single12" class="LB-white-content">
+              <div class="close" onclick="HideLightBox(); return false;">X</div>
+
+              <div class="modalbox initialmodal animate">
+                <div class="content-lightbox content-login">
+                  <div class="content-lb-left left">
+                    <h4>Já sou cadastrado</h4>
+                    <div class="login">
+                      <form method="post" action="produtos.html">
+                          <p><input type="text" name="login" value="" placeholder="E-mail"></p>
+                          <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                          <p><a class="remember-pass" href="#">Esqueceu a senha?</a></p>
+                          <button class="submit"><input type="submit" name="commit" value="Entrar"></button>
+                          <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="content-lb-left left">
+                    <h4>Não sou cadastrado</h4>
+                    <p>
+                      Faça seu cadastro e conclua suas compras. 
+                    </p> 
+                    <img src="img/site-blindado.png"/>
+                    <div class="login">
+                        <button type="button" class="redo btn">Cadastrar-se</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+             
+              <div class="row">
+                  <div class="modalbox cadastromodal animate">
+                      <div class="icon">
+                          <span class="glyphicon glyphicon-thumbs-down"></span>
+                      </div>
+                      <h4>Dados pessoais</h4>
+                      <form method="post" action="produtos.html">
+                          <p><input type="text" name="nome" value="nome" placeholder="Nome"></p>
+                          <p><input type="text" name="sobrenome" value="sobrenome" placeholder="Sobrenome"></p>
+                          <p><input type="text" name="email" value="email" placeholder="E-mail"></p>
+                          <p><input type="text" name="cpf" value="cpf" placeholder="CPF"></p>
+                          <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                          <p><a class="remember-pass" href="#">Esqueceu a senha?</a></p>
+                          <button class="submit"><input type="submit" name="commit" value="Entrar"></button>
+                          <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
+                      </form>
+                      <button type="button" class="redo btn">< Voltar</button>
+                  </div>
+              </div>
+            
+            </div>
+
+            <a id="OpenLightBox">
+              <span id="lightboxspan" onclick="ShowLightBox('single12'); return false;">
+                <img class="icon-perfil" src="img/icon-perfil.svg"/>Login
+              </span>
+            </a>
+            <a href="sacola.html"><img src="img/icon-bag.svg"/>Sacola</a>
+          </div>
+        </div>
+      </section>
+      <section class="second-line-section">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1><a href="loja.html"><img src="img/logo-job.png"/></a></h1>
+            <nav>
+              <ul>
+                  <li>
+                    <a href="tendencias.html">Tendências</a>
+                  </li>
+                  <li>
+                    <a href="novidades.html">Novidades</a>
+                  </li>
+                  <li>
+                    <a href="marcas.html">Comprar por Marca</a>
+                  </li>
+                  <li>
+                    <a href="produtos.html">Comprar por Produto</a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+    <section class="row">
+      <div class="large-12">
+        <div class="panel main-catalog">
+          <div class="large-3 medium-3 columns">
+            <aside class="main-sidebar">
+              <h4>Filtre sua busca</h4>
+              <nav>
+                <div class="accordion">
+                  <dl>
+                    <dt>
+                        <a aria-expanded="true" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger is-collapsed is-expanded">Feminino</a>
+                    </dt>
+                    <dd class="accordion-content accordionItem is-expanded animateIn" id="accordion2" aria-hidden="false">
+                      <li><a href="#">Camisetas</a></li>
+                      <li><a href="#">Blusas</a></li>
+                      <li><a href="#">Calças</a></li>
+                      <li><a href="#">Shorts</a></li>
+                      <li><a href="#">Sapatinhas</a></li>
+                    </dd>
+
+                    <dt>
+                        <a aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Masculino</a>
+                    </dt>
+                    <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                      <li><a href="#">Camisetas</a></li>
+                      <li><a href="#">Moletons</a></li>
+                      <li><a href="#">Calças</a></li>
+                      <li><a href="#">Tênis</a></li>
+                      <li><a href="#">Polos</a></li>
+                    </dd>
+
+                    <dt>
+                        <a aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Tamanhos</a>
+                    </dt>
+                    <dd class="accordion-content accordionItem is-collapsed size-buttons" id="accordion3" aria-hidden="true">
+                      <li><a href="#">PP</a></li>
+                      <li><a href="#">P</a></li>
+                      <li><a href="#">M</a></li>
+                      <li><a href="#">G</a></li>
+                      <li><a href="#">GG</a></li>
+                      <li><a href="#">GGG</a></li>
+                    </dd>
+
+                    <dt>
+                        <a aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Preço</a>
+                    </dt>
+                    <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                      <li><a href="#">de R$0 a R$100</a></li>
+                      <li><a href="#">de R$100 a R$200</a></li>
+                      <li><a href="#">de R$200 a R$300</a></li>
+                      <li><a href="#">de R$300 a R$400</a></li>
+                      <li><a href="#">de R$400 a R$500</a></li>
+                      <li><a href="#">de R$500 a R$600</a></li>
+                    </dd>
+
+                    <dt>
+                        <a aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">Marcas</a>
+                    </dt>
+                    <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                      <li><a href="#">Nicole Bustamante</a></li>
+                      <li><a href="#">Nicole Bustamante</a></li>
+                      <li><a href="#">Nicole Bustamante</a></li>
+                      <li><a href="#">Nicole Bustamante</a></li>
+                      <li><a href="#">Nicole Bustamante</a></li>
+                      <li><a href="#">Nicole Bustamante</a></li>
+                    </dd>
+                  </dl>
+               </div>
+              </nav>
+            </aside>
+          </div>
+          <div class="large-9 medium-9 columns">
+            <div class="catalog products">
+              <div class="row">
+                <div class="large-12 medium-12 columns">
+                  <div class="left">
+                    <h4>Todos os produtos</h4>
+                  </div>
+                  <div class="right">
+                    <div class="combo-ordenar left">
+                      <span>Ordenar por: </span>
+                      <select id="size">
+                        <option>Mais populares</option>
+                        <option>Mais Vendidos</option>
+                        <option>Menor Preço</option>
+                        <option>Maior Preço</option>
+                      </select>
+                    </div>
+                    <div class="navigation-number left">
+                      <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="large-4 medium-4 columns">
+                  <a href="camiseta-tatoo-sport.html">
+                    <img src="img/product_0012-tatoo.jpg" />
+                    <span>
+                      <strong>
+                        Camiseta Tattoo Sport
+                        <i class="price">R$74</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0008_cute-955783_1920.jpg" />
+                    <span>
+                      <strong>
+                        Saia Blond Girl
+                        <i class="price">R$104</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0009_bridge-990100_1920.jpg" />
+                    <span>
+                      <strong>
+                        Camiseta Skull Gang
+                        <i class="price">R$54</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0004_sandals-587185_1920.jpg" />
+                    <span>
+                      <strong>
+                        Salto Dark Blue
+                        <i class="price">R$254</i>
+                      </strong>
+                    </span>
+                  </a>
+                </div>
+                <div class="large-4 medium-4 columns">
+                  <a href="#">
+                    <img src="img/product_0010_boots-181744_1280.jpg" />
+                    <span>
+                      <strong>
+                        Sneaker Panter
+                        <i class="price">R$150</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0005_girl-918417_1920.jpg" />
+                    <span>
+                      <strong>
+                        Camiseta USA
+                        <i class="price">R$40</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0006_fashion-694837_1920.jpg" />
+                    <span>
+                      <strong>
+                        Conjunto Listras
+                        <i class="price">R$220</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0001_shoes-89037_640.jpg" />
+                    <span>
+                      <strong>
+                        Sapato Social
+                        <i class="price">R$254</i>
+                      </strong>
+                    </span>
+                  </a>
+                </div>
+                <div class="large-4 medium-4 columns">
+                  <a href="#">
+                    <img src="img/product_0011_women-656074_1920.jpg" />
+                    <span>
+                      <strong>
+                        Vestido Blue Princess
+                        <i class="price">R$550</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0002_shoes-89037_640.jpg" />
+                    <span>
+                      <strong>
+                        Sandália Blink
+                        <i class="price">R$49</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0003_shoes-620762_1920.jpg" />
+                    <span>
+                      <strong>
+                        Salto Spectral
+                        <i class="price">R$310</i>
+                      </strong>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="img/product_0000_shoes-649690_1920.jpg" />
+                    <span>
+                      <strong>
+                        Sapato Little Kid
+                        <i class="price">R$69</i>
+                      </strong>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="large-12 medium-12 columns">
+                <div class="navigation-number right">
+                  <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h3>Novidades</h3>
+          <div class="multiple-items news-slider">
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/product_0007_dress-739665_1920.jpg" />
+                <span>
+                  <strong>
+                    Sapato Little Kid
+                    <i class="price">R$69</i>
+                  </strong>
+                </span>
+              </a>
+            </div>
+          </div>
+
+
+          <div class="multiple-items brands-list">
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="img/brand-nicole-bustamante.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav>
+            <ul class="large-2">
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+              <li><a href="loja.html">Nossa loja</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="social-media large-3 right">
+              <h4>Nos acompanhe</h4>
+              <li><a href="#"><img src="img/icon-facebook.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-instagram.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-twitter.svg"/></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 3
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>
