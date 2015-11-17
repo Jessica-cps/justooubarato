@@ -803,6 +803,10 @@ button.transparent-button:hover{
     border-color: #48637b;
 }
 
+button.transparent-button-white a{
+    color: #fff;
+}
+
 .call-login{
     text-transform: uppercase;
     display: block;
@@ -1181,7 +1185,15 @@ input[type="checkbox"]{
 .float-button-fb{
     top: 17em;
     padding: 0.7em;
-    color: #000;
+    color: #1E2831;
+}
+
+.float-button-fb a{
+    color: #1E2831;
+}
+
+.cto-slider-treinamento{
+    margin: 10em 6em;
 }
 
 /* Section bgs */
