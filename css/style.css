@@ -1107,6 +1107,26 @@ input[type="checkbox"]{
     bottom: -7px;
 }
 
+.destaque-slider .slick-prev
+{
+    left: 100px;
+}
+[dir='rtl'] .destaque-slider .slick-prev
+{
+    right: 100px;
+    left: auto;
+}
+
+.destaque-slider .slick-next
+{
+    right: 100px;
+}
+[dir='rtl'] .destaque-slider .slick-next
+{
+    right: auto;
+    left: 100px;
+}
+
 .animate-box-1{
   animation: fadeUpIn 1s;
   -webkit-animation: fadeUpIn 1s; /* Safari and Chrome */
