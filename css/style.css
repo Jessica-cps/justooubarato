@@ -127,22 +127,17 @@ header.main-header{
 
 */.home header h1{
     width: 12em;
-}/*
-
-header h1{
-	width: 3em;
-	float: left;
-    margin: 0.2em 0;
 }
 
-header nav{
-	float: right;
-	margin: 2em 0 0;
+@media only screen and (max-width: 40em){
+    .home header h1{
+        width: 7em;
+    }
 }
 
 .home header nav li{
     vertical-align: middle;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .home header nav{
@@ -151,70 +146,63 @@ header nav{
     margin: 0;
 }
 
-header nav li{
+.loja header h1{
+	width: 3em;
+	float: left;
+    margin: 0.2em 0;
+}
+
+.loja header nav{
+	float: right;
+	margin: 2em 0 0;
+}
+
+
+.loja header nav li{
 	display: inline-block;
 	margin: 1em;
 	font-size: 1em;
 }
 
-header nav li:last-of-type{
+.loja header nav li:last-of-type{
     margin-right: 0;
 }
 
-header .first-line-section a{
+.loja header .first-line-section a{
 	display: inline-block;
 	margin: auto 0.9em 0;
     font-size: 0.9em;
 }
 
-header .first-line-section a:last-of-type{
+.loja header .first-line-section a:last-of-type{
     margin-right: 0;
 }
 
-header .first-line-section{
+.loja header .first-line-section{
 	border-bottom: 1px solid #DDDDDD;
 	padding: 0.5em;
 }
 
-header .second-line-section{
+.loja header .second-line-section{
 	border-bottom: 1px solid #DDDDDD;
 	-webkit-box-shadow: 0 9px 16px -13px black;
 	-moz-box-shadow: 0 9px 16px -13px black;
 	box-shadow: 0 9px 16px -13px black;
 }
 
-header .first-line-section img{
+.loja header .first-line-section img{
 	width: 1.5em;
 	margin-right: 0.5em;
 	vertical-align: bottom;
 }
 
-header .first-line-section .input[type=search]{
+.loja header .first-line-section .input[type=search]{
     height: 1.8em;
     font-size: 0.95em;
-} */
-
-@media only screen and (min-width: 64.063em) { .mega-menu {left: -200% !important;}}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {  .mega-menu {left: -100% !important;}}
-.mega-menu {
-    border-radius: 0 0 5px 5px;
-    padding: 15px 0 15px 15px;
-    top: 45px;
-    width: 960px !important;
-  background-color:#ccc;
-  postion:absolute;
-}
-
-@media only screen and (max-width: 40em) {
-  .mega-menu{
-  box-shadow: none !important;
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-  background: #333!important;
-  border: none !important; 
-     position:relative;
-   }
 } 
+
+/* Menu responsivo */
+
 
 /* Search */
 
@@ -1129,22 +1117,22 @@ input[type="checkbox"]{
 
 .destaque-slider .slick-prev
 {
-    left: 100px;
+    left: 5%;
 }
 [dir='rtl'] .destaque-slider .slick-prev
 {
-    right: 100px;
+    right: 5%;
     left: auto;
 }
 
 .destaque-slider .slick-next
 {
-    right: 100px;
+    right: 5%;
 }
 [dir='rtl'] .destaque-slider .slick-next
 {
     right: auto;
-    left: 100px;
+    left: 5%;
 }
 
 .animate-box-1{
