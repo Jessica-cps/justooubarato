@@ -120,6 +120,32 @@
       </div>
     </section>
 
+    <section class="bg-color-section bg-light-blue large-padding">
+      <div class="row">
+        <a name="contato"></a>
+        <div class="large-10 columns large-centered">
+          <div class="cadastro">
+            <h3>Contato</h3>
+            <form method="post" action="#">
+                <div class="large-6 columns">
+                  <p><input type="text" name="nome" placeholder="Nome"></p>
+                </div>
+                <div class="large-6 columns">
+                  <p><input type="text" name="email" placeholder="E-mail"></p>
+                </div>
+                <div class="large-12 columns">
+                  <p><textarea rows="6" name="mensagem" placeholder="Mensagem"></textarea></p>
+                </div>
+                <div class="large-12 text-center">
+                  <p><button class="submit"><input type="submit" name="commit" value="Enviar"></button></p>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <footer class="main-footer bg-light-blue">
       <div class="row">
         <div class="large-12 columns">
@@ -166,6 +192,23 @@
           dots: true
         });
       });  
+    </script>
+
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 500);
+              return false;
+            }
+          }
+        });
+      });
     </script>
 
     <script type="text/javascript" src="js/script.js"></script>
