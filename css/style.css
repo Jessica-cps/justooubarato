@@ -1115,6 +1115,13 @@ input[type="checkbox"]{
     bottom: -7px;
 }
 
+@media only screen and (max-width: 40em) {
+    .destaque-slider .slick-dots{
+        bottom: -58px;
+        margin: 1em 0;
+    }
+}
+
 .destaque-slider .slick-prev
 {
     left: 5%;
@@ -1177,6 +1184,12 @@ input[type="checkbox"]{
     position: relative;
 }
 
+@media only screen and (max-width: 40em){
+    .destaque-slider .slick-dots li button:before{
+        background-color: #000000;
+    }
+}
+
 .destaque-slider .slick-dots li{
     width: 4em; 
     margin: 0;
@@ -1197,7 +1210,13 @@ input[type="checkbox"]{
 }
 
 .cto-slider-treinamento{
-    margin: 10em 6em;
+    margin: 10em 16em 10em 1em;
+}
+
+@media only screen and (max-width: 40em) {
+    .cto-slider-treinamento{
+        margin: 0;
+    }
 }
 
 /* Section bgs */
@@ -1215,6 +1234,23 @@ body.home{
 
 .bg-light-blue-gradient{
     background-image: linear-gradient(to right, #d6d5ec, #ededf5);
+}
+
+@media only screen and (max-width: 40em) {
+    .bg-light-blue-gradient{
+        box-shadow: 1px 3px 6px 1px #2A2A35;
+        padding-bottom: 3em;
+    }
+
+    .bg-light-blue-gradient.bg-separator{
+        background-color: #ededf5;
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .bg-light-blue-gradient.bg-separator img{
+        margin-top: 3em;
+    }
 }
 
 .bg-light-blue-gradient img{
