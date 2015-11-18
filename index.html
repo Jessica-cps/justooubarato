@@ -15,24 +15,27 @@
     <header class="main-header">
       <section>
         <div class="row">
-          <div class="large-12 columns">
-            <nav>
-              <ul>
-                  <li>
-                    <a href="sobre.html">Sobre</a>
+          <div class="large-12">
+            <div class="contain-to-grid fixed">
+              <nav class="top-bar" data-topbar >
+                <ul class="title-area">
+                  <!-- Title Area -->
+                  <li class="name">
+                    <h1><a href="#"><img src="img/logo-job.svg"></a></h1>
                   </li>
-                  <li>
-                    <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
-                  </li>
-                  <li><h1><img src="img/logo-job.png"/></h1></li>
-                  <li>
-                    <a href="loja.html">Nossa Loja</a>
-                  </li>
-                  <li>
-                    <a href="contato.html">Contato</a>
-                  </li>
-              </ul>
-            </nav>
+                  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                  <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                  <!-- Left Nav Section -->
+                  <ul class="left">
+                    <li><a href="#">Main Item 1</a></li>
+                    <li><a href="#">Main Item 2</a></li>
+                  </ul>
+                </section>
+              </nav>
+              </div>
           </div>
         </div>
       </section>
@@ -132,6 +135,9 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+
     <script>
       $(document).foundation();
     </script>
@@ -153,6 +159,7 @@
         });
       });  
     </script>
+
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>

@@ -114,7 +114,7 @@ a:hover{
 
 /* Header */
 
-.home header.main-header{
+/*.home header.main-header{
     background-image: none;
     margin-bottom: 3em;
 }
@@ -125,9 +125,9 @@ header.main-header{
     background-repeat: no-repeat;
 }
 
-.home header h1{
-    width: 4em;
-}
+*/.home header h1{
+    width: 12em;
+}/*
 
 header h1{
 	width: 3em;
@@ -192,7 +192,29 @@ header .first-line-section img{
 header .first-line-section .input[type=search]{
     height: 1.8em;
     font-size: 0.95em;
+} */
+
+@media only screen and (min-width: 64.063em) { .mega-menu {left: -200% !important;}}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {  .mega-menu {left: -100% !important;}}
+.mega-menu {
+    border-radius: 0 0 5px 5px;
+    padding: 15px 0 15px 15px;
+    top: 45px;
+    width: 960px !important;
+  background-color:#ccc;
+  postion:absolute;
 }
+
+@media only screen and (max-width: 40em) {
+  .mega-menu{
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  background: #333!important;
+  border: none !important; 
+     position:relative;
+   }
+} 
 
 /* Search */
 
@@ -246,12 +268,6 @@ input[type=search]:focus{
 }
 
 /* Lists */
-
-ul{
-	list-style: none;
-	display: inline-block;
-	vertical-align: top;
-}
 
 .social-media{
 	text-align: center;
@@ -1272,6 +1288,12 @@ footer.main-footer{
     background-image: url(../img/bg-bottom-left.png), url(../img/bg-bottom-right.png);
     background-position: bottom left, top right;
     background-repeat: no-repeat;
+}
+
+footer ul{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 }
 
 footer li{
