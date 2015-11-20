@@ -186,6 +186,10 @@ select {
   margin-bottom: 0; 
 }
 
+.loja .contain-to-grid .top-bar{
+  width: 100%;
+}
+
 .fixed {
   position: fixed;
   top: 0;
@@ -322,7 +326,7 @@ select {
 .top-bar .toggle-topbar.menu-icon a {
   color: #FFFFFF;
   height: 34px;
-  line-height: 33px;
+  line-height: 19px;
   padding: 0 2.5rem 0 0.9375rem;
   position: relative; 
 }

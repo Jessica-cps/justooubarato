@@ -147,13 +147,12 @@ header.main-header{
 }
 
 .loja header h1{
-	width: 3em;
+	width: 10em;
 	float: left;
     margin: 0.2em 0;
 }
 
 .loja header nav{
-	float: right;
 	margin: 2em 0 0;
 }
 
@@ -162,6 +161,24 @@ header.main-header{
 	display: inline-block;
 	margin: 1em;
 	font-size: 1em;
+}
+
+@media only screen and (max-width: 40em){
+    .loja header nav .top-bar-section li{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .loja header nav{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 40em){
+    .cell input[type=search] {
+        display: none;
+    }
 }
 
 .loja header nav li:last-of-type{
