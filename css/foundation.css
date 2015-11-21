@@ -326,10 +326,19 @@ select {
 .top-bar .toggle-topbar.menu-icon a {
   color: #FFFFFF;
   height: 34px;
-  line-height: 19px;
+  line-height: 37px;
   padding: 0 2.5rem 0 0.9375rem;
   position: relative; 
 }
+
+.home .top-bar .toggle-topbar.menu-icon a{
+  line-height: 73px;
+}
+
+.home .top-bar.expanded{
+  background-color: #333;
+}
+
 
 .top-bar .toggle-topbar.menu-icon a span::after {
   content: "";
@@ -404,6 +413,7 @@ select {
   display: block;
   padding: 12px 0 12px 0.9375rem;
   width: 100%; 
+  text-align: center;
 }
 
 .top-bar-section ul li > a.button {
@@ -1976,12 +1986,10 @@ button, .button {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
   position: relative;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
   transition: background-color 300ms ease-out; }
   button.secondary, .button.secondary {

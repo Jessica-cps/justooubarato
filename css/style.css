@@ -125,13 +125,20 @@ header.main-header{
     background-repeat: no-repeat;
 }
 
-*/.home header h1{
-    width: 12em;
-}
+*/
 
 @media only screen and (max-width: 40em){
+
     .home header h1{
-        width: 7em;
+        height: 2.3em;
+        margin: 0.1em !important;
+    }
+
+    header h1{
+        width: 10em;
+        height: 1.9em;
+        float: left;
+        margin: 0.2em 0;
     }
 }
 
@@ -207,7 +214,7 @@ header.main-header{
     box-shadow: 0 9px 16px -13px black;
 }
 
-.loja header .first-line-section img{
+.loja header .first-line-section .icon-header img{
     width: 1.5em;
     margin-right: 0.5em;
     vertical-align: bottom;
@@ -223,21 +230,21 @@ header.main-header{
 
 /* Search */
 
-div#search {
+#search {
     display: table;
     display: inline-block;
     vertical-align: middle;  
 }
-div#search div.cell {
-  display: table-cell;
-  width: 100%;
+#search .cell {
+  display: inline-block;
   font-size: 0.9em;
 }
-div#search div.cell:last-child {
-  width: 1px;
+
+#search .cell:first-of-type {
+  width: 34.3em;
 }
 
-input[type=search], div.button {  
+input[type=search], .button {  
   width: 100%;
   height: 1.9em;
 
@@ -259,17 +266,6 @@ input[type=search] {
 
 input[type=search]:focus{
     border-color: #f0b137;
-}
-
-.cell .button {
-    background-image: url(../img/icon-search.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 0.4em;
-    padding: 0.7em;
 }
 
 /* Lists */
@@ -337,6 +333,11 @@ h3{
 }
 
 @media only screen and (min-width: 40.0625em) {
+
+    .home header h1{
+        width: 12em;
+    }
+
     .catalog a:hover,
     .news-slider a:hover{
         background-color: #000;
@@ -474,12 +475,27 @@ h3{
 }
 
 @media only screen and (max-width: 40em) {
-    .catalog div:nth-child(even) a span, .catalog div a:nth-child(even) span{
+    .catalog div:nth-child(even) a span, 
+    .catalog div a:nth-child(even) span{
         width: 6em;
         height: 6em;
         top: 31%;
         left: 55%;
     }
+
+    .catalog.produtcs div:nth-child(even) a span, 
+    .catalog.products div a:nth-child(even) span{
+        width: 6.2em;
+        height: 6.3em;
+        top: 51%;
+        left: 52%;
+    }
+
+    .catalog.products div:nth-child(even) a span, .catalog.products div a:nth-child(even) span{
+        top: 59%;
+    }
+
+
 }
 
 .catalog div:nth-child(even) a,
@@ -532,6 +548,7 @@ h3{
     width: 16em;
     padding: 0.4em;
     font-family: Open Sans, Arial, sans-serif;
+    margin-bottom: 1em;
 }
 
 .navigation-number li{
@@ -582,7 +599,7 @@ aside li{
 .accordion dd {
     font-size: 1em;
     line-height: 1.5em;
-    margin-left: 0px;
+    margin-left: 0.5em;
 }
 
 .accordion dd ul{
@@ -983,7 +1000,7 @@ input[type="checkbox"]{
 }
 
 .internal-product img{
-    margin: 5em 0;
+    margin: 3.5em 0;
 }
 
 .internal-product span strong{
@@ -1030,7 +1047,22 @@ input[type="checkbox"]{
 
 .internal-product .buy-button{
     display: inline-block;
-    margin: 0 2em;
+    margin: 1em 2em;
+}
+
+@media only screen and (max-width: 40em) {
+    .internal-product .buy-button{
+        display: block;
+        margin: 2em 0;
+    }
+
+    .internal-product img{
+        margin: 1em 0 0;
+    }
+
+    .tab-internal-product .content{
+        width: 100% !important;
+    }
 }
 
 .internal-product .buy-button button{
@@ -1055,15 +1087,19 @@ input[type="checkbox"]{
 }
 
 .tab-internal-product [type=radio]:checked ~ .content {
-  display: block;
+    display: block;
 }
 
 .tab-internal-product .tabs {
-  position: relative;
+    position: relative;
+    position: relative;
+    display: table;
+    height: 24em;
+    width: 100%;
 }
 
 .tab-internal-product .tab {
-  float: left;
+    float: left;
 }
 
 .tab-internal-product .tab label {
@@ -1087,7 +1123,7 @@ input[type="checkbox"]{
   position: absolute;
   left: 0;
   display: none;
-  width: 83%;
+  width: 86%;
   min-height: 10em;
   padding: 1em;
   background: #FFFFFF;
