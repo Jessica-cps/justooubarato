@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justo ou Barato</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="loja">
+    <header class="main-header">
+      <section class="first-line-section">
+        <div class="row">
+          <div class="large-12 columns text-right">
+            <div class="large-7 medium-7 small-2 columns">
+              <div id="search">  
+                <div class="cell"><input type="search" placeholder="O que você procura?"></div>
+                <div class="cell"><div class="icon-header button"><a href="sapato.html"><img src="img/icon-search.svg"></a></div></div>
+              </div>
+            </div>
+
+
+            <a class="icon-header" href="#"><img src="img/icon-mail.svg"/>Contato</a>
+
+            <div id="fade" class="LB-black-overlay" onclick="if (!is_modal) HideLightBox(); return false;"></div>
+            <div id="single12" class="LB-white-content">
+              <div class="close" onclick="HideLightBox(); return false;">X</div>
+
+              <div class="modalbox initialmodal animate">
+                <div class="content-lightbox content-login">
+                  <div class="content-lb-left left">
+                    <h4>Já sou cadastrado</h4>
+                    <div class="login">
+                      <form method="post" action="loja.html">
+                          <p><input type="text" name="login" value="" placeholder="E-mail"></p>
+                          <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                          <p><a class="remember-pass" href="#">Esqueceu a senha?</a></p>
+                          <button class="submit"><input type="submit" name="commit" value="Entrar"></button>
+                          <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="content-lb-left left">
+                    <h4>Não sou cadastrado</h4>
+                    <p>
+                      Faça seu cadastro e conclua suas compras. 
+                    </p> 
+                    <img src="img/site-blindado.png"/>
+                    <div class="login">
+                        <button type="button" class="redo btn"><a href="cadastro.html">Cadastrar-se</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <a class="icon-header" id="OpenLightBox">
+              <span id="lightboxspan" onclick="ShowLightBox('single12'); return false;">
+                <img class="icon-perfil" src="img/icon-perfil.svg"/>Login
+              </span>
+            </a>
+            <a class="icon-header" href="sacola.html"><img src="img/icon-bag.svg"/>Sacola</a>
+          </div>
+        </div>
+      </section>
+      <section class="second-line-section">
+        <div class="row">
+          <div class="large-12">
+            <div class="contain-to-grid">
+              <nav class="top-bar" data-topbar >
+                <ul class="title-area">
+                  <!-- Title Area -->
+                  <li class="name hide-when-desk">
+                    <h1><a href="loja.html"><img src="img/logo-job.png"></a></h1>
+                  </li>
+                  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                  <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                  <!-- Left Nav Section -->
+                  <ul class="right">
+                    <li><a href="tendencias.html">Tendências</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="marcas.html">Comprar por Marca</a></li>
+                    <li><a href="produtos.html">Comprar por Produto</a></li>
+                  </ul>
+                </section>
+              </nav>
+              </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+    <section class="row l-row-mini">
+      <div class="large-12 columns">
+        <div class="cadastro">
+            <form method="post" action="loja.html">
+                <h4>Dados pessoais</h4>
+                <p><input type="text" name="nome" value="" placeholder="Nome">
+                <input type="text" name="sobrenome" value="" placeholder="Sobrenome"></p>
+                <p><input type="email" name="email" value="" placeholder="E-mail"></p>
+                <p><input type="text" name="cpf" value="" placeholder="CPF"></p>
+                <p>
+                <input type="text" name="nascimento" value="" placeholder="Data de Nascimento">
+                <label for="sexo">Sexo: </label>
+                <input type="radio" name="sexo" value="Feminino"><label for="sexo">Feminino</label>
+                <input type="radio" name="sexo" value="Masculino"><label for="sexo">Masculino</label>
+                </p>
+
+                <h4 class="l-row-inverse-mini">Dados da conta</h4>
+                <p><input type="password" name="password" value="" placeholder="Senha">
+                <input type="password" name="password" value="" placeholder="Confirme sua senha">
+                <div class="large-12">
+                  <div class="large-3 left">
+                    <button class="submit"><input type="submit" name="commit" value="Cadastrar"></button>
+                  </div>
+                  <div class="large-4 left">
+                    <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="large-12 columns">
+                    <h4>Personalize sua loja! (Opcional)</h4>
+                    <p>Você pode personalizar o que deseja ver na sua pagina inicial. Basta selecionar o que mais gosta e filtraremos as sugestões para você ;)</p>
+
+                    <h4>Roupas</h4>
+                    <label for="camisetas">Camisetas</label>
+                    <input type="checkbox" name="camisetas" value="camisetas">
+                    <label for="calcas">Calças</label>
+                    <input type="checkbox" name="calcas" value="calcas">
+                    <label for="Saias">Saias</label>
+                    <input type="checkbox" name="Saias" value="Saias">
+                    <label for="blusinhas">Blusinhas</label>
+                    <input type="checkbox" name="blusinhas" value="blusinhas">
+                    <label for="vestidos">Vestidos</label>
+                    <input type="checkbox" name="vestidos" value="vestidos">
+
+                    <h4 class="l-row-inverse-mini">Calçados</h4>
+                    <label for="saltos">Saltos</label>
+                    <input type="checkbox" name="saltos" value="saltos">
+                    <label for="sapatilhas">Sapatilhas</label>
+                    <input type="checkbox" name="sapatilhas" value="sapatilhas">
+                    <label for="botas">Botas</label>
+                    <input type="checkbox" name="botas" value="botas">
+                    <label for="chinelos">Chinelos</label>
+                    <input type="checkbox" name="chinelos" value="chinelos">
+                    <label for="sandalias">Sandalias</label>
+                    <input type="checkbox" name="sandalias" value="sandalias">
+
+                    <h4 class="l-row-inverse-mini">Acessórios</h4>
+                    <label for="bones">Bonés</label>
+                    <input type="checkbox" name="bones" value="bones">
+                    <label for="bolsas">Bolsas</label>
+                    <input type="checkbox" nabme="bolsas" value="bolsas">
+                    <label for="mochilas">Mochilas</label>
+                    <input type="checkbox" name="mochilas" value="mochilas">
+                    <label for="malas">Malas</label>
+                    <input type="checkbox" name="malas" value="malas">
+                    <label for="pulseiras">Pulseiras</label>
+                    <input type="checkbox" name="pulseiras" value="pulseiras">
+                    <label for="aneis">Anéis</label>
+                    <input type="checkbox" name="aneis" value="aneis">
+                  </div>
+                </div>
+            </form>
+          </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="row">
+        <div class="large-12">
+          <nav>
+            <ul class="large-2">
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+              <li><a href="loja.html">Nossa loja</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="social-media large-3 right">
+              <h4>Nos acompanhe</h4>
+              <li><a href="#"><img src="img/icon-facebook.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-instagram.svg"/></a></li>
+              <li><a href="#"><img src="img/icon-twitter.svg"/></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+
+      var mq = window.matchMedia('all and (max-width: 700px)');
+        if(mq.matches) {
+            // the width of browser is less then 700px
+            $(document).ready(function(){
+              $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              });
+            });
+
+        } else {
+            // the width of browser is more then 700px
+            $(document).ready(function(){
+              $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4
+              });
+            });
+        }
+
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>

@@ -796,6 +796,12 @@ aside li{
     margin-right: 1em;
 }
 
+.cadastro input[type="checkbox"]{
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+}
+
 .cadastro input[type="submit"]{
     text-align: right;
     background: none;
@@ -808,6 +814,7 @@ aside li{
 .cadastro button.submit{
     width: 14.6em;
     display: inline-block;
+    margin-bottom: 2em;
 }
 
 .cadastro button.submit.fb-button{
@@ -835,6 +842,10 @@ label{
 
 .login button.redo.btn {
     width: 100%;
+}
+
+.login button a{
+    color: #fff;
 }
 
 /* Login */
