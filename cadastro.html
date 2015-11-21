@@ -24,7 +24,7 @@
             </div>
 
 
-            <a class="icon-header" href="#"><img src="img/icon-mail.svg"/>Contato</a>
+            <a class="icon-header" href="index.html#contato"><img src="img/icon-mail.svg"/>Contato</a>
 
             <div id="fade" class="LB-black-overlay" onclick="if (!is_modal) HideLightBox(); return false;"></div>
             <div id="single12" class="LB-white-content">
@@ -116,14 +116,6 @@
                 <h4 class="l-row-inverse-mini">Dados da conta</h4>
                 <p><input type="password" name="password" value="" placeholder="Senha">
                 <input type="password" name="password" value="" placeholder="Confirme sua senha">
-                <div class="large-12">
-                  <div class="large-3 left">
-                    <button class="submit"><input type="submit" name="commit" value="Cadastrar"></button>
-                  </div>
-                  <div class="large-4 left">
-                    <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
-                  </div>
-                </div>
 
                 <hr>
 
@@ -132,43 +124,244 @@
                     <h4>Personalize sua loja! (Opcional)</h4>
                     <p>Você pode personalizar o que deseja ver na sua pagina inicial. Basta selecionar o que mais gosta e filtraremos as sugestões para você ;)</p>
 
-                    <h4>Roupas</h4>
-                    <label for="camisetas">Camisetas</label>
-                    <input type="checkbox" name="camisetas" value="camisetas">
-                    <label for="calcas">Calças</label>
-                    <input type="checkbox" name="calcas" value="calcas">
-                    <label for="Saias">Saias</label>
-                    <input type="checkbox" name="Saias" value="Saias">
-                    <label for="blusinhas">Blusinhas</label>
-                    <input type="checkbox" name="blusinhas" value="blusinhas">
-                    <label for="vestidos">Vestidos</label>
-                    <input type="checkbox" name="vestidos" value="vestidos">
+                    <div class="row">
+                      <ul class="large-block-grid-4 small-block-grid-2 l-row-mini choice-categories">
+                        <h4 class="columns">Roupas</h4>
+                        <li>
+                          <div class="choice-category">
+                            <label for="saias">
+                              <img src="img/icon-saia.svg">
+                              Saias
+                            </label>
+                            <input type="checkbox" name="saias" value="saias" id="saias">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="camisetas">
+                              <img src="img/icon-camiseta.svg">
+                              Camisetas
+                            </label>
+                            <input type="checkbox" name="camisetas" value="camisetas" id="camisetas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="vestidos">
+                              <img src="img/icon-vestido.svg">
+                              Vestidos
+                            </label>
+                            <input type="checkbox" name="vestidos" value="vestidos" id="vestidos">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="calcas">
+                              <img src="img/icon-pants.svg">
+                              Calças
+                            </label>
+                            <input type="checkbox" name="calcas" value="calcas" id="calcas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="shorts">
+                              <img src="img/icon-shorts.svg">
+                              Shorts
+                            </label>
+                            <input type="checkbox" name="shorts" value="shorts" id="shorts">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="bermudas">
+                              <img src="img/icon-bermuda.svg">
+                              Bermudas
+                            </label>
+                            <input type="checkbox" name="bermudas" value="bermudas" id="bermudas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="meias">
+                              <img src="img/icon-meias.svg">
+                              Meias
+                            </label>
+                            <input type="checkbox" name="meias" value="meias" id="meias">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="jaquetas">
+                              <img src="img/icon-jaqueta.svg">
+                              Jaquetas
+                            </label>
+                            <input type="checkbox" name="jaquetas" value="jaquetas" id="jaquetas">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="row">
+                      <ul class="large-block-grid-4 small-block-grid-2  l-row-mini choice-categories">
+                        <h4 class="columns">Calçados</h4>
+                        <li>
+                          <div class="choice-category">
+                            <label for="chinelos">
+                              <img src="img/icon-chinelo.svg">
+                              Chinelos
+                            </label>
+                            <input type="checkbox" name="chinelos" value="chinelos" id="chinelos">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="tenis">
+                              <img src="img/icon-tenis.svg">
+                              Tênis de corrida
+                            </label>
+                            <input type="checkbox" name="tenis" value="tenis" id="tenis">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="botas">
+                              <img src="img/icon-botas.svg">
+                              Botas
+                            </label>
+                            <input type="checkbox" name="botas" value="botas" id="botas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="chuteiras">
+                              <img src="img/icon-chuteiras.svg">
+                              Chuteiras
+                            </label>
+                            <input type="checkbox" name="chuteiras" value="chuteiras" id="chuteiras">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="sapatilhas">
+                              <img src="img/icon-sapatilha.svg">
+                              Sapatilhas
+                            </label>
+                            <input type="checkbox" name="sapatilhas" value="sapatilhas" id="sapatilhas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="salto">
+                              <img src="img/icon-salto.svg">
+                              Salto
+                            </label>
+                            <input type="checkbox" name="salto" value="salto" id="salto">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="salto-plataforma">
+                              <img src="img/icon-salto-plataforma.svg">
+                              Plataforma
+                            </label>
+                            <input type="checkbox" name="salto-plataforma" value="salto-plataforma" id="salto-plataforma">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="tenis-casual">
+                              <img src="img/icon-tenis-casual.svg">
+                              Tênis casual
+                            </label>
+                            <input type="checkbox" name="tenis-casual" value="tenis-casual" id="tenis-casual">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
 
-                    <h4 class="l-row-inverse-mini">Calçados</h4>
-                    <label for="saltos">Saltos</label>
-                    <input type="checkbox" name="saltos" value="saltos">
-                    <label for="sapatilhas">Sapatilhas</label>
-                    <input type="checkbox" name="sapatilhas" value="sapatilhas">
-                    <label for="botas">Botas</label>
-                    <input type="checkbox" name="botas" value="botas">
-                    <label for="chinelos">Chinelos</label>
-                    <input type="checkbox" name="chinelos" value="chinelos">
-                    <label for="sandalias">Sandalias</label>
-                    <input type="checkbox" name="sandalias" value="sandalias">
-
-                    <h4 class="l-row-inverse-mini">Acessórios</h4>
-                    <label for="bones">Bonés</label>
-                    <input type="checkbox" name="bones" value="bones">
-                    <label for="bolsas">Bolsas</label>
-                    <input type="checkbox" nabme="bolsas" value="bolsas">
-                    <label for="mochilas">Mochilas</label>
-                    <input type="checkbox" name="mochilas" value="mochilas">
-                    <label for="malas">Malas</label>
-                    <input type="checkbox" name="malas" value="malas">
-                    <label for="pulseiras">Pulseiras</label>
-                    <input type="checkbox" name="pulseiras" value="pulseiras">
-                    <label for="aneis">Anéis</label>
-                    <input type="checkbox" name="aneis" value="aneis">
+                    <div class="row">
+                      <ul class="large-block-grid-4 small-block-grid-2 l-row-mini choice-categories">
+                        <h4 class="columns">Acessórios</h4>
+                        <li>
+                          <div class="choice-category">
+                            <label for="bones">
+                              <img src="img/icon-bone.svg">
+                              Bonés
+                            </label>
+                            <input type="checkbox" name="bones" value="bones" id="bones">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="oculos">
+                              <img src="img/icon-oculos.svg">
+                              Óculos
+                            </label>
+                            <input type="checkbox" name="oculos" value="oculos" id="oculos">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="colar">
+                              <img src="img/icon-colar.svg">
+                              Colares
+                            </label>
+                            <input type="checkbox" name="colar" value="colar" id="colar">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="bolsas">
+                              <img src="img/icon-bolsa.svg">
+                              Bolsas
+                            </label>
+                            <input type="checkbox" name="bolsas" value="bolsas" id="bolsas">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="aneis">
+                              <img src="img/icon-anel.svg">
+                              Anéis
+                            </label>
+                            <input type="checkbox" name="aneis" value="aneis" id="aneis">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="chinelos">
+                              <img src="img/icon-chinelo.svg">
+                              Chinelos
+                            </label>
+                            <input type="checkbox" name="chinelos" value="chinelos" id="chinelos">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="oculos">
+                              <img src="img/icon-oculos.svg">
+                              Óculos
+                            </label>
+                            <input type="checkbox" name="oculos" value="oculos" id="oculos">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="choice-category">
+                            <label for="mochilas">
+                              <img src="img/icon-backpack.svg">
+                              Mochilas
+                            </label>
+                            <input type="checkbox" name="mochilas" value="mochilas" id="mochilas">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="large-12">
+                      <div class="right">
+                        <button class="submit"><a href="cadastro-sucess.html">Cadastrar</a></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
             </form>
@@ -181,16 +374,14 @@
         <div class="large-12">
           <nav>
             <ul class="large-2">
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-              <li><a href="loja.html">Nossa loja</a></li>
-              <li><a href="contato.html">Contato</a></li>
+              <li><a href="index.html#sobre">Sobre</a></li>
+              <li><a href="index.html#trabalhe-conosco">Trabalhe Conosco</a></li>
+              <li><a href="index.html#loja">Nossa loja</a></li>
+              <li><a href="index.html#contato">Contato</a></li>
             </ul>
             <ul class="social-media large-3 right">
               <h4>Nos acompanhe</h4>
-              <li><a href="#"><img src="img/icon-facebook.svg"/></a></li>
-              <li><a href="#"><img src="img/icon-instagram.svg"/></a></li>
-              <li><a href="#"><img src="img/icon-twitter.svg"/></a></li>
+              <li><a href="https://www.facebook.com/job.justooubarato" target="_blank" title="Acesse nossa pagina no Facebook"><img src="img/icon-facebook.svg"/></a></li>
             </ul>
           </nav>
         </div>

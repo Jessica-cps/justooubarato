@@ -830,6 +830,37 @@ aside li{
     margin: 0 0.3em 0 1em;
 }
 
+.contato button{
+    padding: 1em;
+    font-size: 1em;
+}
+
+.choice-category img{
+    width: 5em;
+    display: block;
+    margin: 0 auto 1em;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.choice-category{
+    border: 1px solid #C4C2C2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    background-color: #48637b;
+    color: #fff;
+}
+
+.choice-category li{
+    padding: 0;
+}
+
+.choice-category label{
+    text-transform: uppercase;
+    margin: 0 0.2em;
+}
+
 button.redo.btn{
     width: 9.7em;
     margin: 0 0 2em;
@@ -868,6 +899,14 @@ button{
     font-family: Open Sans, sans-serif;
     color: #fff;
     background-color: #f0b137;
+}
+
+button a{
+    color: #fff;
+}
+
+button a:hover{
+    color: #fff;
 }
 
 button:hover,
