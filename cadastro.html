@@ -102,20 +102,45 @@
         <div class="cadastro">
             <form method="post" action="loja.html">
                 <h4>Dados pessoais</h4>
-                <p><input type="text" name="nome" value="" placeholder="Nome">
-                <input type="text" name="sobrenome" value="" placeholder="Sobrenome"></p>
-                <p><input type="email" name="email" value="" placeholder="E-mail"></p>
-                <p><input type="text" name="cpf" value="" placeholder="CPF"></p>
-                <p>
-                <input type="text" name="nascimento" value="" placeholder="Data de Nascimento">
-                <label for="sexo">Sexo: </label>
-                <input type="radio" name="sexo" value="Feminino"><label for="sexo">Feminino</label>
-                <input type="radio" name="sexo" value="Masculino"><label for="sexo">Masculino</label>
-                </p>
+                <div class="row">
+                  <div class="large-4 small-12 columns">
+                    <p><input type="text" name="nome" value="" placeholder="Nome"></p>
+                  </div>
+                  <div class="large-4 small-12 columns">
+                    <p><input type="text" name="sobrenome" value="" placeholder="Sobrenome"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p><input type="email" name="email" value="" placeholder="E-mail"></p>
+                    <p><input type="text" name="cpf" value="" placeholder="CPF"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p><input type="text" name="nascimento" value="" placeholder="Data de Nascimento"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p>
+                      <label for="sexo">Sexo: </label>
+                      <input type="radio" name="sexo" value="Feminino"><label for="sexo">Feminino</label>
+                      <input type="radio" name="sexo" value="Masculino"><label for="sexo">Masculino</label>
+                    </p>
+                  </div>
+                </div>
 
                 <h4 class="l-row-inverse-mini">Dados da conta</h4>
-                <p><input type="password" name="password" value="" placeholder="Senha">
-                <input type="password" name="password" value="" placeholder="Confirme sua senha">
+
+                <div class="row">
+                  <div class="large-4 small-12 columns">
+                    <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                  </div>
+                  <div class="large-4 small-12 columns">
+                    <p><input type="password" name="password" value="" placeholder="Confirme sua senha"></p>
+                  </div>
+                </div>
 
                 <hr>
 
@@ -359,7 +384,7 @@
                     </div>
                     <div class="large-12">
                       <div class="right">
-                        <button class="submit"><a href="cadastro-sucess.html">Cadastrar</a></button>
+                        <a href="cadastro-sucess.html"><button class="submit">Cadastrar</button></a>
                       </div>
                     </div>
                   </div>
