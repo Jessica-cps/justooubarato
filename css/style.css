@@ -837,9 +837,10 @@ aside li{
 
 .box-custom-plans{
     background-color: #404040;
-    padding: 1em;
     color: #fff;
     text-align: center;
+    height: 26em;
+    border-top-left-radius: 3em;
 }
 
 .box-custom-plans li{
@@ -848,12 +849,19 @@ aside li{
 }
 
 .box-custom-plans h2{
-    color: #f0b137;
+    color: #fff;
+    background-color: #f0b137;
+    padding: 1em;
 }
 
 .box-custom-plans button{
     padding: 0.7em;
     font-size: 1em;
+}
+
+.btn-plan-treinamento{
+    position: relative;
+    top: 7.2em; 
 }
 
 .choice-category img{
