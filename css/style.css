@@ -1369,6 +1369,16 @@ input[type="checkbox"]{
     position: relative;
 }
 
+.app-job-download{
+    position: relative;
+}
+
+.google-play-btn{
+    position: absolute;
+    bottom: 1.4em;
+    left: 14em;
+}
+
 @media only screen and (max-width: 40em){
     .destaque-slider .slick-dots li button:before{
         background-color: #000000;
@@ -1403,7 +1413,7 @@ input[type="checkbox"]{
 }
 
 .cto-slider-treinamento{
-    margin: 10em 16em 10em 1em;
+    margin: 11em 16em 10em 5em;
 }
 
 @media only screen and (max-width: 40em) {
