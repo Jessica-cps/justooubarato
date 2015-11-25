@@ -1470,7 +1470,7 @@ button.float-button-fb:hover{
     background-size: cover;
     color: #fff;
     padding: 3em 0;
-    height: 20em;
+    height: 26em;
 }
 
 .destaque-treinamento h3{
@@ -1479,12 +1479,12 @@ button.float-button-fb:hover{
 
 .bg-certificado{
     background-image: url(../img/bg-certificado.jpg);
-    background-position: 0 -310px;
+    background-position: 0 -201px;
 }
 
 .bg-nao-certificado{
     background-image: url(../img/bg-nao-certificado.jpg);
-    background-position: 0 -310px;
+    background-position: 0 -50px;
     border-top: 1px solid #48637b;
 }
 
