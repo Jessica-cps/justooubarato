@@ -373,6 +373,7 @@ h3{
         text-transform: uppercase;
         text-align: center;
         transform: rotate(45deg);
+        border-radius: 0.5em;
     }
 
     .catalog a:hover span{
@@ -432,6 +433,7 @@ h3{
         text-transform: uppercase;
         text-align: center;
         transform: rotate(45deg);
+        border-radius: 0.5em;
     }
 
     .catalog a span{
@@ -439,6 +441,7 @@ h3{
         height: 7em;
         top: 56%;
         left: 52%;
+        border-radius: 0.5em;
     }
 
     .catalog div:nth-child(even) a:nth-child(even) span{
@@ -472,6 +475,7 @@ h3{
     height: 6.5em;
     top: 19%;
     left: 29%;
+    border-radius: 0.5em;
 }
 
 @media only screen and (max-width: 40em) {
@@ -837,10 +841,8 @@ aside li{
 }
 
 .box-custom-plans{
-    background-color: #8EACC2;
     color: #fff;
     text-align: center;
-    height: 26em;
     border-top-left-radius: 3em;
 }
 
@@ -849,13 +851,14 @@ aside li{
 }
 
 .box-custom-plans li{
-    list-style: none;
-    padding: 1em;
+    list-style: square;
+    padding: 0.4em;
+    text-align: left;
+    margin-left: 1em;
 }
 
 .box-custom-plans h4{
     color: #fff;
-    background-color: #48637b;
     padding: 1em;
 }
 
@@ -868,11 +871,6 @@ aside li{
 .box-custom-plans button:hover,
 .box-custom-plans button:active{
     background-color: #354B5F;
-}
-
-.btn-plan-treinamento{
-    position: relative;
-    top: 7.2em; 
 }
 
 .choice-category img{
@@ -1298,7 +1296,7 @@ input[type="checkbox"]{
 /* Destaque Slider */
 
 .destaque-slider p{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .destaque-slider .slick-prev, 
@@ -1435,9 +1433,14 @@ input[type="checkbox"]{
 }
 
 .float-button-fb{
-    top: 17em;
-    padding: 0.7em;
-    color: #1E2831;
+    top: 16em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+button.float-button-fb:hover{
+    background-color: #f0b137;
+    border-color: #f0b137;
 }
 
 @media only screen and (max-width: 40em){
@@ -1453,7 +1456,7 @@ input[type="checkbox"]{
 }
 
 .cto-slider-treinamento{
-    margin: 11em 16em 10em 5em;
+    margin: 11em 5em;
 }
 
 @media only screen and (max-width: 40em) {
@@ -1462,13 +1465,48 @@ input[type="checkbox"]{
     }
 }
 
+.destaque-treinamento{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 3em 0;
+    height: 20em;
+}
+
+.destaque-treinamento h3{
+    color: #fff;
+}
+
+.bg-certificado{
+    background-image: url(../img/bg-certificado.jpg);
+    background-position: 0 -310px;
+}
+
+.bg-nao-certificado{
+    background-image: url(../img/bg-nao-certificado.jpg);
+    background-position: 0 -310px;
+    border-top: 1px solid #48637b;
+}
+
+.button-full-certificado{
+    top: 5em;
+}
+
 /* Section bgs */
 
-body.home{
-    background-color: #d2d2ea;
+body.home,
+body.loja{
     background-image: url(../img/bg-top-right-home.png);
     background-position: right top;
     background-repeat: no-repeat;
+}
+
+body.home{
+    background-color: #d2d2ea;
+}
+
+body.loja{
+    background-color: #EFEFF5;
 }
 
 .bg-light-blue{
@@ -1517,6 +1555,10 @@ body.home{
 
 .bg-color-black h3{
     color: #fff;
+}
+
+.mini-padding {
+    padding: 1em 0;
 }
 
 .super-padding{
