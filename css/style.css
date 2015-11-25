@@ -406,8 +406,8 @@ h3{
     .news-slider a:hover span{
         width: 7em;
         height: 7em;
-        top: 25%;
-        left: 20%;
+        top: 22%;
+        left: 17%;
     }
 }
 
@@ -1415,6 +1415,17 @@ input[type="checkbox"]{
     position: absolute;
     bottom: 1.4em;
     left: 14em;
+}
+
+.qr-code-simbol{
+    position: absolute;
+    bottom: 1.4em;
+    left: 5em;
+    width: 8em;
+}
+
+.qr-code-simbol img{
+    width: 100%;
 }
 
 @media only screen and (max-width: 40em){
