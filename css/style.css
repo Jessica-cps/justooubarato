@@ -1469,8 +1469,10 @@ button.float-button-fb:hover{
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 3em 0;
-    height: 26em;
+    padding: 4em 0;
+    display: table;
+    min-height: 26em;
+    width: 100%;
 }
 
 .destaque-treinamento h3{
