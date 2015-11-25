@@ -11,63 +11,9 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
-  <body class="loja">
+  <body class="home">
     <header class="main-header">
-      <section class="first-line-section">
-        <div class="row">
-          <div class="large-12 columns text-right">
-            <div class="large-7 medium-7 small-2 columns">
-              <div id="search">  
-                <div class="cell"><input type="search" placeholder="O que você procura?"></div>
-                <div class="cell"><div class="icon-header button"><a href="sapato.html"><img src="img/icon-search.svg"></a></div></div>
-              </div>
-            </div>
-
-
-            <a class="icon-header" href="index.html#contato"><img src="img/icon-mail.svg"/>Contato</a>
-
-            <div id="fade" class="LB-black-overlay" onclick="if (!is_modal) HideLightBox(); return false;"></div>
-            <div id="single12" class="LB-white-content">
-              <div class="close" onclick="HideLightBox(); return false;">X</div>
-
-              <div class="modalbox initialmodal animate">
-                <div class="content-lightbox content-login">
-                  <div class="content-lb-left left">
-                    <h4>Já sou cadastrado</h4>
-                    <div class="login">
-                      <form method="post" action="loja.html">
-                          <p><input type="text" name="login" value="" placeholder="E-mail"></p>
-                          <p><input type="password" name="password" value="" placeholder="Senha"></p>
-                          <p><a class="remember-pass" href="#">Esqueceu a senha?</a></p>
-                          <button class="submit"><input type="submit" name="commit" value="Entrar"></button>
-                          <button class="submit fb-button"><input type="submit" name="commit" value="Entrar com o Facebook"></button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="content-lb-left left">
-                    <h4>Não sou cadastrado</h4>
-                    <p>
-                      Faça seu cadastro e conclua suas compras. 
-                    </p> 
-                    <img src="img/site-blindado.png"/>
-                    <div class="login">
-                        <button type="button" class="redo btn"><a href="cadastro.html">Cadastrar-se</a></button>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-
-            <a class="icon-header" id="OpenLightBox">
-              <span id="lightboxspan" onclick="ShowLightBox('single12'); return false;">
-                <img class="icon-perfil" src="img/icon-perfil.svg"/>Login
-              </span>
-            </a>
-            <a class="icon-header" href="sacola.html"><img src="img/icon-bag.svg"/>Sacola</a>
-          </div>
-        </div>
-      </section>
-      <section class="second-line-section">
+      <section>
         <div class="row">
           <div class="large-12">
             <div class="contain-to-grid">
@@ -83,11 +29,14 @@
 
                 <section class="top-bar-section">
                   <!-- Left Nav Section -->
-                  <ul class="right">
-                    <li><a href="tendencias.html">Tendências</a></li>
-                    <li><a href="novidades.html">Novidades</a></li>
-                    <li><a href="marcas.html">Comprar por Marca</a></li>
-                    <li><a href="produtos.html">Comprar por Produto</a></li>
+                  <ul class="left">
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#trabalhe-conosco">Trabalhe Conosco</a></li>
+                    <li class="name hide-when-mobile">
+                      <h1><a href="loja.html"><img src="img/logo-job.png"></a></h1>
+                    </li>
+                    <li><a href="index.html#loja">Nossa Loja</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
                   </ul>
                 </section>
               </nav>
@@ -97,8 +46,58 @@
       </section>
     </header>
     
+    <section class="row l-row-mini">
+      <div class="large-9 columns large-centered">
+        <div class="cadastro">
+          <h3>Pacote treinamento</h3>
+            <form method="post" action="loja.html">
+                <h4>Dados pessoais</h4>
+                <div class="row">
+                  <div class="large-4 small-12 columns">
+                    <p><input type="text" name="nome" value="" placeholder="Nome"></p>
+                  </div>
+                  <div class="large-4 small-12 columns">
+                    <p><input type="text" name="sobrenome" value="" placeholder="Sobrenome"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p><input type="email" name="email" value="" placeholder="E-mail"></p>
+                    <p><input type="text" name="cpf" value="" placeholder="CPF"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p><input type="text" name="nascimento" value="" placeholder="Data de Nascimento"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <p>
+                      <label for="sexo">Sexo: </label>
+                      <input type="radio" name="sexo" value="Feminino"><label for="sexo">Feminino</label>
+                      <input type="radio" name="sexo" value="Masculino"><label for="sexo">Masculino</label>
+                    </p>
+                  </div>
+                </div>
+
+                <h4 class="l-row-inverse-mini">Dados da conta</h4>
+
+                <div class="row">
+                  <div class="large-4 small-12 columns">
+                    <p><input type="password" name="password" value="" placeholder="Senha"></p>
+                  </div>
+                  <div class="large-4 small-12 columns">
+                    <p><input type="password" name="password" value="" placeholder="Confirme sua senha"></p>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+    </section>
+
     <section>
-      <div class="panel">
+      <div class="large-9 medium-9 columns large-centered">
         <div class="internal-product bag cadastro">
           <div class="row">
             <div class="large-12 medium-12 columns l-row-inverse">
@@ -165,11 +164,15 @@
                 <label for="num-parcelas left">Número de parcelas</label>
                 <p>
                   <select name="num-parcelas">
-                    <option value="1x130">1x de R$130,00</option>
-                    <option value="2x55">2x de R$65,00</option>
+                    <option value="1x">1x de R$5000,00</option>
+                    <option value="2x">2x de R$2500,00</option>
+                    <option value="3x">3x de R$1666,67</option>
                   </select>
                 </p>
               </div>
+            </div>
+            <div class="large-4 columns">
+              <a href="sucess-compra-treinamento.html" class="buy-button"><button>Fechar compra</button></a>
             </div>
           </div>
         </div>
@@ -177,82 +180,9 @@
     </div>
   </section>
 
-   
-
-    <hr>
-
-    <section>
-      <div class="panel">
-        <div class="internal-product bag cadastro">
-          <div class="row">
-            <div class="large-12 columns">
-              <h4>4. Revisão do pedido</h4>
-              <h4 class="l-row-inverse-mini">Produtos</h4>
-              <div class="large-2 medium-2 left">
-                <img src="img/product_0012-tatoo.jpg" />
-              </div>
-              <div class="large-4 medium-4 columns">
-                <span>
-                    <strong>Camiseta Tattoo</strong>
-                    <span>Tamanho P</span>
-                </span>
-              </div>
-              <div class="right">
-                <div class="labels-internal">
-                  <span class="label-internal-product">Quantidade</span>
-                  <span>1</span>
-                </div>
-                <div class="labels-internal">
-                  <span class="label-internal-product">Valor unitário</span>
-                  <span>R$130,00</span>
-                </div>
-                <div class="labels-internal">
-                  <span class="label-internal-product">Valor total</span>
-                  <span>R$130,00</span>
-                </div>
-              </div>
-            </div>
-                
-
-            <div class="large-12 columns">
-              <div class="right">
-                <span>Total: </span>
-                <span>R$130,00</span>
-                <span> + </span>
-                <input type="radio">
-                Doação: R$ <input class="price-donation" type="number" min="0.10" step="0.10" value="1.00" />
-              </div>
-            </div>
-
-            <div class="large-12 columns l-row-mini">
-              <div class="left">
-                <h4>Forma de envio</h4>
-                <span>Escolha a forma de envio: </span>
-                <div class="types-send">
-                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
-                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
-                  <p><input type="radio" name="sedex" value="Sedex"><label for="sedex">Sedex</label></p>
-                </div>
-              </div>
-              <div class="large-3 right">
-                <label for="cep">Digite o CEP:</label>
-                <input type="text" name="cep" class="label-cep right">
-                
-                <div class="text-right l-row-mini">
-                  <p><span class="left">Frete:</span> <span>R$3,00</span></p>
-                  <p><span class="left">Prazo de entrega:</span> <span>3 dias úteis</span></p>
-                  <p><span class="left">Total do pedido:</span> <span>R$133,00</span></p>
-                </div>
-                <a href="sucess-compra.html" class="buy-button right"><button>Finalizar pedido</button></a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="main-footer">
+    <footer class="main-footer bg-light-blue">
       <div class="row">
-        <div class="large-12">
+        <div class="large-9 columns large-centered">
           <nav>
             <ul class="large-2">
               <li><a href="index.html#sobre">Sobre</a></li>
@@ -273,6 +203,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
+
     <script>
       $(document).foundation();
     </script>
@@ -298,7 +229,34 @@
               });
             });
         }
+
+      $(document).ready(function(){
+        $('.destaque-slider').slick({
+          infinite: true,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          dots: true
+        });
+      });  
     </script>
+
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 500);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>

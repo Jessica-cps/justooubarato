@@ -777,7 +777,8 @@ aside li{
 .home .cadastro input[type="email"],
 .home .cadastro input[type="password"],
 .home .cadastro input[type="number"],
-.home .cadastro textarea{
+.home .cadastro textarea,
+.home .cadastro select{
     width: 100%;
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.35);
@@ -836,11 +837,15 @@ aside li{
 }
 
 .box-custom-plans{
-    background-color: #404040;
+    background-color: #8EACC2;
     color: #fff;
     text-align: center;
     height: 26em;
     border-top-left-radius: 3em;
+}
+
+.box-custom-plans ul{
+    margin: 0;
 }
 
 .box-custom-plans li{
@@ -848,15 +853,21 @@ aside li{
     padding: 1em;
 }
 
-.box-custom-plans h2{
+.box-custom-plans h4{
     color: #fff;
-    background-color: #f0b137;
+    background-color: #48637b;
     padding: 1em;
 }
 
 .box-custom-plans button{
     padding: 0.7em;
     font-size: 1em;
+    background-color: #48637b;
+}
+
+.box-custom-plans button:hover,
+.box-custom-plans button:active{
+    background-color: #354B5F;
 }
 
 .btn-plan-treinamento{
