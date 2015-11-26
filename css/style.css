@@ -10,9 +10,9 @@ h1,
 h2,
 h3,
 h4{
-    font-family: 'Monitorica', sans-serif;
+    font-family: 'Antonio-Light', sans-serif;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: lighter;
     color: #48637b;
 }
 
@@ -899,7 +899,7 @@ aside li{
     margin: 0 0.2em;
 }
 
-button.redo.btn{
+.redo.btn{
     width: 9.7em;
     margin: 0 0 2em;
 }
@@ -909,7 +909,7 @@ label{
     vertical-align: middle;
 }
 
-.login button.redo.btn {
+.login .redo.btn {
     width: 100%;
 }
 
@@ -1296,7 +1296,7 @@ input[type="checkbox"]{
 /* Destaque Slider */
 
 .destaque-slider p{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .destaque-slider .slick-prev, 
@@ -1478,11 +1478,10 @@ button.float-button-fb:hover{
 
 .destaque-treinamento{
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 118em;
     color: #fff;
     padding: 4em 0;
     display: table;
-    min-height: 26em;
     width: 100%;
 }
 
