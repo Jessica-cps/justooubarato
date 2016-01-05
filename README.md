@@ -1,3 +1,3 @@
-# Justo ou Barato :: justooubarato.com.br
+# Justo ou Barato 
 
-Site criado para um projeto de TCC
+Projeto acadêmico (TCC) do curso de Design digital na Anhembi Morumbi
